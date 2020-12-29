@@ -4,7 +4,7 @@ class ContactForm extends Component {
 	render() {
 		return (
 			//TODO
-			<form className="contact-form" method="post" action="/contactForm.java">
+			<form className="contact-form" method="post" action="/contactForm.php">
 				<label className="contact-form__label">
 					<span>Name*</span>
 					<input
