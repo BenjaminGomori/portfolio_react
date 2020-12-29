@@ -1,0 +1,29 @@
+.projects-filters {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	transition: color 0.3s ease-out;
+
+	@media (max-width: 450px) {
+		width: 180px;
+	}
+
+	@media (max-width: 350px) {
+		width: 160px;
+	}
+
+	&__filter {
+		color: gray;
+
+		&:hover {
+			cursor: pointer;
+			color: #6060bb;
+		}
+
+		&-active {
+			pointer-events: none;
+			text-decoration: underline;
+			color: #6060bb;
+		}
+	}
+}

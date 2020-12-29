@@ -1,0 +1,89 @@
+.contact-form {
+	padding: 3rem 1rem 1rem 1rem;
+	color: #505050;
+	font-size: 1rem;
+	display: relative;
+	text-align: end;
+
+	@media (min-width: 1100px) {
+		padding: 3rem;
+		width: 100%;
+	}
+
+	&__label {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: 100px 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 0.3rem;
+		grid-template-areas: 'label input';
+		margin-bottom: 2.5rem;
+		text-align: start;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+			'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		letter-spacing: 1px;
+
+		@media (min-width: 1100px) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__input {
+		&:required {
+			border-color: #ccc !important;
+			box-shadow: none !important;
+			-webkit-box-shadow: none !important;
+			min-width: 100px !important;
+			outline: none !important;
+
+			&:focus {
+				border: 0px solid rgb(116, 116, 116) !important;
+				outline: none !important;
+				border-bottom: 2px solid rgb(116, 116, 116) !important;
+				box-shadow: none !important;
+				-webkit-box-shadow: none !important;
+			}
+		}
+
+		grid-area: input;
+		height: 30px;
+		resize: none;
+		border: 0px solid rgb(168, 168, 168);
+		border-bottom: 2px solid rgb(168, 168, 168);
+		background-color: rgb(250, 250, 250);
+		color: #505050;
+
+		@media (min-width: 1100px) {
+			margin-top: -5px;
+		}
+	}
+
+	&__message {
+		height: 150px;
+		border: 2px solid rgb(168, 168, 168);
+		color: #505050;
+
+		&:required:focus {
+			border: 2px solid rgb(116, 116, 116) !important;
+			border-bottom: 2px solid rgb(116, 116, 116) !important;
+		}
+	}
+
+	&__submit {
+		padding: 0.5rem 1rem;
+		background-color: #b9b9b9;
+		color: #464646;
+		box-shadow: 0px 0px 5px -3px black;
+		align-self: end;
+		border-radius: 4px;
+		font-variant: small-caps;
+		letter-spacing: 1px;
+		-webkit-transition: background-color 0.1s ease-out, border 0.25s ease-out;
+		-ms-transition: background-color 0.1s ease-out, border 0.25s ease-out;
+		transition: background-color 0.1s ease-out, border 0.25s ease-out;
+
+		&:hover {
+			background-color: rgb(168, 168, 168);
+		}
+	}
+}

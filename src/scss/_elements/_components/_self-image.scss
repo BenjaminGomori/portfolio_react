@@ -1,0 +1,20 @@
+.self-image {
+	display: inline-block;
+	position: absolute;
+	top: 38%;
+	height: 158px;
+	width: 158px;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 255);
+	display: grid;
+	place-items: center;
+	z-index: 200;
+
+	&__img {
+		height: 150px;
+		width: 150px;
+		border-radius: 50%;
+		object-fit: cover;
+		background-color: #262626;
+	}
+}
